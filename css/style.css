@@ -517,6 +517,14 @@ h3 {
     border: 2px solid #FFF;
     background: #FDCB28;
     margin: 0px 6px;
+    cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.questiont__wrap button:hover {
+    transform: scale(0.95);
+    filter: brightness(0.8);
 }
 
 .sectiont2__left1 {
@@ -917,7 +925,7 @@ footer {
     height: 100%;
     top: 0;
     left: 0;
-    background: #FFBF00;
+    background: #ffffff;
     display: none
 }
 
