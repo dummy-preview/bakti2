@@ -117,10 +117,10 @@ $(window).scroll(function() {
     }
 });
 
-ScrollSmoother.create({
-    content: ".viewport",
-    smooth: 1
-});
+// ScrollSmoother.create({
+//     content: ".viewport",
+//     smooth: 1
+// });
 
 AOS.init();
 
