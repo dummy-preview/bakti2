@@ -1,6 +1,12 @@
 $(document).ready(function() {
+    // s preload
+    if ($(window).load(function() {
+            $(".loader").delay(3500).fadeOut("slow", function() {
+                $(this).remove()
+            })
+        }))
     // s backtotop
-    var toggleHeight = $(window).outerHeight() * 1;
+        var toggleHeight = $(window).outerHeight() * 1;
 
     $(window).scroll(function() {
         if ($(window).scrollTop() > toggleHeight) {
@@ -33,7 +39,6 @@ $(document).ready(function() {
         $('.q-s').fadeIn();
         $('.q-b').fadeOut();
     });
-    // quiz
     $('#q-m').click(function() {
         $('.q-m').fadeIn();
         $('.q-f').fadeOut();
@@ -76,6 +81,47 @@ var animation = bodymovin.loadAnimation({
     path: 'img/sectiont2/obj3.json',
     name: 'myAnimation',
 });
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('obj4'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'img/sectiont3/obj4.json',
+    name: 'myAnimation',
+});
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('obj5'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'img/sectiont3/obj5.json',
+    name: 'myAnimation',
+});
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('loader'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'img/loader.json',
+    name: 'myAnimation',
+});
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('orang-p'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'img/sectiont1/orang-cw.json',
+    name: 'myAnimation',
+});
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('orang-l'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'img/sectiont1/orang-cwk.json',
+    name: 'myAnimation',
+});
+
 
 // parallax
 $.fn.moveIt = function() {
@@ -117,16 +163,9 @@ $(window).scroll(function() {
     }
 });
 
-// ScrollSmoother.create({
-//     content: ".viewport",
-//     smooth: 1
-// });
 
 AOS.init();
 
-
-// bottom
-// console.clear();
 
 var ww = window.innerWidth,
     wh = window.innerHeight;
@@ -137,8 +176,6 @@ var renderer = new THREE.WebGLRenderer({
 });
 renderer.setSize(ww, wh);
 renderer.setClearColor(0x01114F);
-// scene.background = transparent;
-
 
 var scene = new THREE.Scene();
 scene.fog = new THREE.Fog(0x001A6C, 80, 140);
@@ -149,7 +186,6 @@ camera.position.y = 30;
 camera.position.z = 5;
 camera.lookAt(new THREE.Vector3());
 
-// var controls = new THREE.OrbitControls(camera, renderer.domElement);
 
 /* LIGHTS */
 var moonLight = new THREE.PointLight(0xffffff, 2, 150);
