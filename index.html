@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bakti Negeri Di Perbatasan - Bakti Kominfo </title>
+    <meta name="language" content="id">
+    <meta name="description" content="Bakti Negeri Di Perbatasan">
+    <meta name="keywords" content="kominfo, Bakti Kominfo">
+    <meta name="copyright" content="">
+    <meta name="author" content="Tempo.co">
+    <meta name="robots" content="index,follow">
+    <meta name="creation date" content="2023-11-20">
+    <meta property="og:title" content="Bakti Negeri Di Perbatasan">
+    <meta property="og:description" content="-">
+    <meta property="og:image" content="img/thumbnail.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bakti Negeri Di Perbatasan">
+    <meta name="twitter:description" content="-">
+    <meta name="twitter:image:src" content="img/thumbnail.jpg">
+    <meta name="twitter:image:width" content="650">
+    <meta name="twitter:image:height" content="433">
+    <meta property="fb:app_id" content="332404380172618">
+    <meta property="fb:pages" content="160355148441">
+    <link rel="shortcut icon" href="https://statik.tempo.co/favicon/tempo-white.ico" type="image/x-icon">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="viewport" data-parallax="container">
+        <div class="hero">
+            <div class="hero__bg"></div>
+            <div class="hero__bottom">
+                <canvas></canvas>
+            </div>
+            <div class="hero__hand">
+                <div class="hero__hand--left">
+                    <img src="img/hero/hand-left.png" alt="">
+                </div>
+                <div class="hero__hand--right">
+                    <img src="img/hero/hand-right.png" alt="">
+                </div>
+            </div>
+            <div class="hero__peta">
+                <div id="peta"></div>
+            </div>
+            <div class="hero__obj">
+                <div class="hero__obj--left" data-scroll-speed="8">
+                    <img src="img/hero/obj1.png" alt="">
+                </div>
+                <div class="hero__obj--right" data-scroll-speed="8">
+                    <img src="img/hero/obj2.png" alt="">
+                </div>
+            </div>
+            <div class="hero__title" data-scroll-speed="5">
+                <img src="img/hero/title2.png" alt="">
+            </div>
+            <div class="scroll-down start">
+                <p>Scroll down</p>
+                <span></span>
+            </div>
+        </div>
+        <div class="sectiont1">
+            <div class="container">
+                <div class="sectiont1__title">
+                    <h1>Mengapa menghadirkan akses internet di wilayah perbatasan sangat sulit?</h1>
+                    <p>Pemerataan konektivitas digital di wilayah perbatasan masih menghadapi tantangan karena terkendala infrastruktur dan bentang alam yang tidak sama, seperti topografi berbukit, hutan lebat, dan akses jalan yang sulit.
+                    </p>
+                    <p>
+                        Pemerintah perlu terus berupaya untuk menghadirkan akses internet yang berkualitas dan terjangkau di wilayah perbatasan.
+                    </p>
+                    <p>
+                        Hal ini penting untuk meningkatkan kualitas hidup masyarakat di wilayah perbatasan, termasuk akses informasi, pendidikan, dan kesehatan.</p>
+                    </p>
+                </div>
+            </div>
+            <div class="sectiont1__bottom">
+                <img src="img/sectiont1/bottom.png" alt="">
+            </div>
+        </div>
+        <div class="sectiont2">
+            <div class="sectiont2__wrap">
+                <div class="sectiont2__left">
+                    <div class="sectiont2__left--titlemobile view-mobile">
+                        Merdeka Belajar Di Tapal Batas
+                    </div>
+                    <div class="sectiont2__left--land">
+                        <img src="img/sectiont2/land1.png" alt="">
+                    </div>
+                    <div class="sectiont2__left--quiz view-desktop">
+                        <div class="questiont1">
+                            Berapa jumlah laptop yang bisa digunakan di sekolah perbatasan agar internetnya tetap lancar?
+                        </div>
+                        <div class="questiont__wrap">
+                            <button id="q-s">10 Laptop</button>
+                            <button id="q-b">4 Laptop</button>
+                        </div>
+                        <div class="q-b">
+                            BENAR! Dengan 4 laptop, koneksi internet akan lancar dan stabil
+                        </div>
+                        <div class="q-s">
+                            SALAH! Jika lebih dari 4 laptop koneksi internet akan lambat dan tidak stabil
+                        </div>
+                        <div class="questiont__title">
+                            <img src="img/sectiont2/title-quiz.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sectiont2__right">
+                    <h1 class="view-desktop">Merdeka Belajar Di Tapal Batas</h1>
+                    <p>
+                        Faktanya, sekolah-sekolah di wilayah Krayan, Kabupaten Nunukan, Kalimantan Utara sangat minim akses internet.
+                    </p>
+                    <p>
+                        Para siswa memerlukan waktu 1 JAM untuk mengakses Google dan 3 HARI untuk mendownload video. Mereka bahkan rela datang ke Kantor Desa pada waktu subuh untuk mengakses internet yang lebih cepat.
+                    </p>
+                    <p>
+                        Di sisi guru, hanya guru yang berkepentingan untuk bahan ajar dan kuliah online saja yang bisa mendapatkan kupon akses internet</p>
+                </div>
+            </div>
+            <div class="sectiont2__left--quiz view-mobile">
+                <div class="questiont1">
+                    Berapa jumlah laptop yang bisa digunakan di sekolah perbatasan agar internetnya tetap lancar?
+                </div>
+                <div class="questiont__wrap">
+                    <button id="q-sm">10 Laptop</button>
+                    <button id="q-bm">4 Laptop</button>
+                </div>
+                <div class="q-b">
+                    BENAR! Dengan 4 laptop, koneksi internet akan lancar dan stabil
+                </div>
+                <div class="q-s">
+                    SALAH! Jika lebih dari 4 laptop koneksi internet akan lambat dan tidak stabil
+                </div>
+                <div class="questiont__title">
+                    <img src="img/sectiont2/title-quiz.png" alt="">
+                </div>
+            </div>
+            <div class="sectiont2__wrap wrap-mobile">
+                <div class="sectiont2__left1">
+                    <p>
+                        Serupa, siswa di sekolah perbatasan wilayah Akarinda, Kampung Somografi, Distrik Web, Kabupaten Keerom, Papua juga merasakan keterbatasan sinyal!
+                    </p>
+                    <p>
+                        Mereka belajar menggunakan ponsel pintar milik orang tua atau guru. Tiap hari mereka rela datang ke Pos Somografi, Satuan Tugas TNI Pengamanan Perbatasan Indonesia-Papua Nugini untuk belajar online sambil mengisi daya ponsel pintarnya.
+                    </p>
+                    <div class="sectiont2__left--quiz1 view-mobile">
+                        <div class="questiont1">
+                            Terdapat satu sudut di Pos Somografi, Satuan Tugas TNI Pengamanan Perbatasan Indonesia-Papua Nugini dengan belasan steker di dinding
+                        </div>
+                        <div class="questiont__wrap">
+                            <button id="q-mm">Mitos</button>
+                            <button id="q-fm">Fakta</button>
+                        </div>
+                        <div class="q-f">
+                            BENAR! Tiap hari warga kampung maupun siswa datang ke sini untuk mengisi daya ponsel mereka sehingga sudut ini penuh hape berderet.
+                        </div>
+                        <div class="q-m">
+                            SALAH! Faktanya Tiap hari warga kampung maupun siswa datang ke sini untuk mengisi daya ponsel mereka sehingga sudut ini penuh hape berderet.
+                        </div>
+                        <div class="questiont__title">
+                            <img src="img/sectiont2/title-quiz.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sectiont2__right1">
+                    <div class="sectiont2__right1--land">
+                        <img src="img/sectiont2/land2.png" alt="">
+                    </div>
+                    <div class="sectiont2__left--quiz1 view-desktop">
+                        <div class="questiont1">
+                            Terdapat satu sudut di Pos Somografi, Satuan Tugas TNI Pengamanan Perbatasan Indonesia-Papua Nugini dengan belasan steker di dinding
+                        </div>
+                        <div class="questiont__wrap">
+                            <button id="q-m">Mitos</button>
+                            <button id="q-f">Fakta</button>
+                        </div>
+                        <div class="q-f">
+                            BENAR! Tiap hari warga kampung maupun siswa datang ke sini untuk mengisi daya ponsel mereka sehingga sudut ini penuh hape berderet.
+                        </div>
+                        <div class="q-m">
+                            SALAH! Faktanya Tiap hari warga kampung maupun siswa datang ke sini untuk mengisi daya ponsel mereka sehingga sudut ini penuh hape berderet.
+                        </div>
+                        <div class="questiont__title">
+                            <img src="img/sectiont2/title-quiz.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sectiont2__obj2" data-scroll-speed="8">
+                <div id="obj2"></div>
+            </div>
+            <div class="sectiont2__obj3" data-scroll-speed="8">
+                <div id="obj3"></div>
+            </div>
+        </div>
+        <div class="sectiont3">
+            <div class="container">
+                <div class="sectiont3__title">
+                    <h1>Life After BAKTI</h1>
+                    <p>Lalu, bagaimana kehidupan di Kampung Somografi, Distrik Web, Kabupaten Keerom, Papua setelah ada BAKTI?</p>
+                </div>
+                <div class="sectiont3__parabola">
+                    <img src="img/sectiont3/parabola.png" alt="">
+                    <div class="sectiont3__parabola--text1">
+                        Kirim pesan WhatsApp menjadi lancar
+                    </div>
+                    <div class="sectiont3__parabola--text2">
+                        Upload foto dan video aman
+                    </div>
+                    <div class="sectiont3__parabola--text3">
+                        Pengiriman laporan kondisi kesehatan masyarakat lebih mudah.
+                    </div>
+                    <div class="sectiont3__parabola--text4">
+                        Jaringan internet lebih luas dan kuat
+                    </div>
+                    <div class="sectiont3__parabola--text5">
+                        Dimulainya transformasi digital
+                    </div>
+                </div>
+                <div class="sectiont__text">
+                    <p>Berkat kehadiran BAKTI, sekarang berbagai urusan pelayanan di sini serba komputerisasi</p>
+                </div>
+            </div>
+
+            <div class="sectiont3__left" data-scroll-speed="10">
+                <img src="img/sectiont3/obj-left.png" alt="">
+            </div>
+            <div class="sectiont3__right" data-scroll-speed="10">
+                <img src="img/sectiont3/obj-right.png" alt="">
+            </div>
+            <div class="sectiont3__bottom">
+                <img src="img/sectiont3/obj-bottom.png" alt="">
+            </div>
+        </div>
+        <div class="sectiont4">
+            <div class="container">
+                <div class="sectiont__content">
+                    <div class="sectiont4__title">
+                        <h1>Kami bertanya Bu Fadhilah Mathar menjawab</h1>
+                    </div>
+                    <ul id="accordion" class="accordion">
+                        <li>
+                            <div class="link">Bagaimana mempercepat aksesibilitas internet di wilayah 3T?<i class="fa fa-chevron-down"></i></div>
+                            <ul class="submenu">
+                                <li>
+                                    <p>Caranya dengan identifikasi teknologi yang tepat untuk desa/daerah suatu wilayah, mempersiapkan infrastruktur dasar seperti jalan dan pembangkit listrik, dan bekerjasama dengan operator dan penyedia jasa internet.</p>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="link">Bagaimana kelanjutan pembangunan <span class="italic">Base Transceiver Station (BTS)</span> yang belum dibangun dan ditargetkan selesai pada 2023?<i class="fa fa-chevron-down"></i></div>
+                            <ul class="submenu">
+                                <li>
+                                    <p>Dengan didampingi Tim Jaksa Agung Muda Tata Usaha Negara Kejaksaan Agung dan Satuan Tugas (Satgas) BAKTI, kami berencana melakukan perbaikan di seluruh aspek, termasuk review harga kontrak dan legal compliance, serta
+                                        dilandaskan itikad baik untuk kepentingan masyarakat, kami akan segera menghidupkan kembali BTS yang sempat terputus.
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="link">Banyak titik blank-spot di wilayah 3T yang tidak bisa dijangkau infrastruktur, bagaimana memenuhi kebutuhan aksesibilitas internet di wilayah ini?<i class="fa fa-chevron-down"></i></div>
+                            <ul class="submenu">
+                                <li>
+                                    <p>Tidak mudah memang untuk menjangkau titik–titik blank-spot di wilayah 3T karena keterbatasan infrastruktur. Penyediaan infrastruktur telekomunikasi BTS juga tidak mudah. Sebagai gantinya, melalui BAKTI pemerintah memberikan
+                                        layanan akses internet dalam bentuk seperti wifi.</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="sectiont4__directur">
+                <img src="img/sectiont4/directur.png" alt="">
+            </div>
+            <div class="sectiont4__bottom">
+                <img src="img/sectiont4/obj-bottom.png" alt="">
+            </div>
+            <div class="sectiont4__left" data-scroll-speed="10">
+                <img src="img/sectiont4/obj-left.png" alt="">
+            </div>
+            <div class="sectiont4__right" data-scroll-speed="10">
+                <img src="img/sectiont4/obj-right.png" alt="">
+            </div>
+        </div>
+        <div class="sectiont5">
+            <div class="container">
+                <div class="sectiont5__content">
+                    Harapannya, dengan menggunakan anggaran APBD, kedepannya BAKTI dapat memasang lebih banyak <i>Very Small Aperture Terminal (VSAT)</i> dan <i>base transceiver station (BTS)</i> di fasilitas umum seperti sekolah, puskesmas, kantor desa
+                    dan tempat umum lainnya.
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="credit__img">
+                    <img src="img/logo-footer.svg" alt="">
+                </div>
+                <div class="credit__text">
+                    Copyright © 2023 - Tempo.co (Tempo Media Group). All right reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <div class="uxBestview">
+        <div class="display-table">
+            <div class="display-center">
+                <div class="uxBestview__icon">
+                    <img src="img/ux-screen-rotate.png">
+                </div>
+                <div class="uxBestview__title">
+                    Best Experience on portrait mode,<br>lets rotate your device.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--back to top-->
+    <div class="m-backtotop" aria-hidden="true">
+        <div class="arrow">
+            <img src="img/top.png" alt="">
+        </div>
+        <div class="text">
+            Back to top
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/gsap.min.js"></script>
+    <script type="text/javascript" src="js/gsap-latest-beta.min.js"></script>
+    <script type="text/javascript" src="js/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="js/ScrollSmoother.min.js"></script>
+    <script type="text/javascript" src="js/three.min.js"></script>
+    <script type="text/javascript" src="js/OrbitControls.js"></script>
+    <script type="text/javascript" src="js/perlin.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lottie.min.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script type="text/javascript" src="js/engine.js"></script>
+
+
+</body>
+
+</html>
